@@ -3,9 +3,15 @@ import java.io.FileNotFoundException;
 import java.util.*;
 
 public class RandomDataGenerator {
-	private
-		static final String NamesFile = "names.txt";
-		static final String SurnamesFile = "surnames.txt";
+	static final String NamesFile = "names.txt";
+	static final String SurnamesFile = "surnames.txt";
+	static ArrayList<String> names = new ArrayList<String>();
+	static ArrayList<String> surnames = new ArrayList<String>();
+		
+	public RandomDataGenerator() {
+
+		this.refreshFiles();
+	}
 	
 	public ArrayList<Person> generateSociety(int amount){
 		ArrayList<Person> zbior = new ArrayList<Person>();
@@ -15,13 +21,10 @@ public class RandomDataGenerator {
 		}
 		return zbior;
 	}
-
 	private Person randomPerson() {
 		Random randomer = new Random();
 		
 		/* random name from name and surname list files */
-		ArrayList<String> names = readFile(RandomDataGenerator.NamesFile); 
-		ArrayList<String> surnames = readFile(RandomDataGenerator.SurnamesFile);
 		String name = names.get(randomer.nextInt(names.size()));
 		String surname = surnames.get(randomer.nextInt(surnames.size()));
 		
@@ -56,36 +59,41 @@ public class RandomDataGenerator {
 		person.setSalary(Salary.values()[result]);
 		
 		/* "pesel" */
-		short pesel[] = new short[11];
-		String date = ""+birth_year;
+		String pesel;
+		pesel = ""+birth_year;
 		if (birth_month<10)
-			date += "0";
-		date+= birth_month;
+			pesel += "0";
+		pesel+= birth_month;
 		if (birth_day<10)
-			date+= "0";
-		date+= birth_day;
-		pesel[0] = (short) Integer.parseInt(date.substring(2, 3));
-		pesel[1] = (short) Integer.parseInt(date.substring(3, 4));
-		pesel[2] = (short) Integer.parseInt(date.substring(4, 5));
-		pesel[3] = (short) Integer.parseInt(date.substring(5, 6));
-		pesel[4] = (short) Integer.parseInt(date.substring(6, 7));
-		pesel[5] = (short) Integer.parseInt(date.substring(7, 8));
-		pesel[6] = (short) randomer.nextInt(10);
-		pesel[7] = (short) randomer.nextInt(10);
-		pesel[8] = (short) randomer.nextInt(10);
+			pesel+= "0";
+		pesel+= birth_day;
+		pesel += randomer.nextInt(10);
+		pesel += randomer.nextInt(10);
+		pesel += randomer.nextInt(10);
+		short gender;
 		if (name.endsWith("a")) 
-				while((pesel[9] = (short)  randomer.nextInt(10)) % 2 == 1);
+				while((gender = (short)  randomer.nextInt(10)) % 2 == 1);
 		else
-				while((pesel[9] = (short) randomer.nextInt(10)) % 2 == 0);
+				while((gender = (short) randomer.nextInt(10)) % 2 == 0);
+		pesel += gender;
 		/*cyfra kontrolna*/
-		pesel[10] =(short) ( 10 - ( (pesel[0]*1 + pesel[1]*3 + pesel[2]*7 + pesel[3]*9
-				+ pesel[4]*1 + pesel[5]*3 + pesel[6]*7 + pesel[7]*9
-				+ pesel[8]*1 + pesel[9]*3) % 10));
+		pesel+=((10  
+				- (Integer.parseInt(pesel.substring(0, 1))*1 
+				+ Integer.parseInt(pesel.substring(1, 2))*3 + Integer.parseInt(pesel.substring(2, 3))*7 
+				+ Integer.parseInt(pesel.substring(3, 4))*9 + Integer.parseInt(pesel.substring(4, 5))*1 
+				+ Integer.parseInt(pesel.substring(5, 6))*3 + Integer.parseInt(pesel.substring(6, 7))*7 
+				+ Integer.parseInt(pesel.substring(7, 8))*9 + Integer.parseInt(pesel.substring(8, 9))*1 
+				+ Integer.parseInt(pesel.substring(9, 10))*3) 
+				% 10));
 		person.setPesel(pesel);
 		
 		return person;
 	}
 	
+	public void refreshFiles() {
+		names = readFile(RandomDataGenerator.NamesFile);
+		surnames = readFile(RandomDataGenerator.SurnamesFile);
+	}
 	private ArrayList<String> readFile(String fileName){
 		ArrayList<String> array = new ArrayList<String>();
 		

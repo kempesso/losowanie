@@ -1,15 +1,25 @@
+
+
 import java.util.*;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+
+@XmlType(propOrder={"name", "surname", "birth_day", "birth_month", 
+		"birth_year", "pesel", "salary"})
+@XmlRootElement
 public class Person {
-	private
-		int id;
-		static int amount_created=0;
-		String name, surname;
-		int birth_day, birth_month, birth_year;
-		ArrayList<phoneNumber> phone= new ArrayList<phoneNumber>();
-		Salary salary;
-		short pesel[] = new short[11];
+	private int id;
+	private	static int amount_created=0;
+	private	String name, surname;
+	private	int birth_day, birth_month, birth_year;
+	private	ArrayList<phoneNumber> phone= new ArrayList<phoneNumber>();
+	private	Salary salary;
+	private	String pesel;
 	
+	public Person() {}
 	public Person(String name, String surname) {
 		this.setName(name);
 		this.setSurname(surname);
@@ -25,6 +35,7 @@ public class Person {
 	public String getName() {
 		return name;
 	}
+	@XmlElement
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -39,13 +50,22 @@ public class Person {
 	public int getBirth_day() {
 		return birth_day;
 	}
+	public void setBirth_day(int birth_day) {
+		this.birth_day = birth_day;
+	}
 	public int getBirth_month() {
 		return birth_month;
+	}
+	public void setBirth_month(int birth_month) {
+		this.birth_month = birth_month;
 	}
 	public int getBirth_year() {
 		return birth_year;
 	}
-
+	public void setBirth_year(int birth_year) {
+		this.birth_year = birth_year;
+	}
+	
 	public void printNumbers() {
 		for (phoneNumber p : phone)
 			System.out.println(p.getNumber() + " " + p.getType());
@@ -107,19 +127,19 @@ public class Person {
 		this.salary = salary;
 	}
 	
-	public short[] getPesel() {
+	public String getPesel() {
 		return pesel;
 	}
-	public void setPesel(short[] pesel) {
+	public void setPesel(String pesel) {
 		for (int i=0; i<11; i++) 
-			this.pesel[i] = pesel[i];
+			this.pesel = pesel;
 	}
 
 	
 	public int getId() {
 		return id;
 	}
-
+	@XmlAttribute
 	public void setId(int id) {
 		this.id = id;
 	}
