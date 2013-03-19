@@ -66,6 +66,18 @@ public class Society {
 				break;
 			}
 	}
+	public void saveToCsv(String fileName) {
+		CSV_FileManagement CsvManager = new CSV_FileManagement();
+		CsvManager.saveSocietyToFile(this, fileName);
+	}
+	public void personToCsv(int id, String fileName) {
+		for (Person p: person)
+			if (p.getId() == id) {
+				CSV_FileManagement CsvManager = new CSV_FileManagement();
+				CsvManager.savePersonToFile(p, fileName);
+				break;
+			}
+	}
 	public ArrayList<Person> getPerson() {
 		return person;
 	}

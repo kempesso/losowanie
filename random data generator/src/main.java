@@ -28,7 +28,7 @@ public class main {
 		*/
 		
 		int amount = Integer.parseInt(args[0]);
-		String outputFile = args[1];
+		String outputFile = args[2];
 		System.out.println("Saving output to: " + outputFile);
 		
 		Society employee = new Society();
@@ -37,9 +37,10 @@ public class main {
 		
 		//employee.removePerson(3);
 		//employee.printAmount(5);
-		
-		employee.personToXml(1, "xml.xml");
-		employee.saveToXml("xml.xml");
+		if (Integer.parseInt(args[1]) == 0)
+			employee.saveToXml(outputFile);
+		else
+			employee.saveToCsv(outputFile);
 		//Person golota = new Person("andrzej", "golota", 1,1,1993);
 		
 		

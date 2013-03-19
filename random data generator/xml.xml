@@ -1,93 +1,93 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <society>
     <person id="1">
-        <name>Mateusz</name>
-        <surname>Wojciechowski</surname>
-        <birth_day>19</birth_day>
-        <birth_month>2</birth_month>
-        <birth_year>1924</birth_year>
-        <pesel>1924021990299</pesel>
+        <name>Antoni</name>
+        <surname>Iksiński</surname>
+        <birth_day>22</birth_day>
+        <birth_month>11</birth_month>
+        <birth_year>1952</birth_year>
+        <pesel>1952112205018</pesel>
         <salary>FROM1500TO3000</salary>
     </person>
     <person id="2">
-        <name>Tomasz</name>
-        <surname>Iksiński</surname>
-        <birth_day>1</birth_day>
-        <birth_month>11</birth_month>
-        <birth_year>1940</birth_year>
-        <pesel>1940110161432</pesel>
-        <salary>OVER10000</salary>
+        <name>Adam</name>
+        <surname>Wojciechowski</surname>
+        <birth_day>27</birth_day>
+        <birth_month>2</birth_month>
+        <birth_year>1968</birth_year>
+        <pesel>1968022716336</pesel>
+        <salary>FROM0TO1500</salary>
     </person>
     <person id="3">
-        <name>Jeremi</name>
-        <surname>Iksiński</surname>
+        <name>Mateusz</name>
+        <surname>Wojciechowski</surname>
         <birth_day>25</birth_day>
-        <birth_month>3</birth_month>
-        <birth_year>1995</birth_year>
-        <pesel>1995032591574</pesel>
-        <salary>OVER10000</salary>
+        <birth_month>11</birth_month>
+        <birth_year>1966</birth_year>
+        <pesel>1966112574934</pesel>
+        <salary>FROM6000TO10000</salary>
     </person>
     <person id="4">
         <name>Dawid</name>
         <surname>Iksiński</surname>
-        <birth_day>23</birth_day>
-        <birth_month>7</birth_month>
-        <birth_year>1902</birth_year>
-        <pesel>1902072364674</pesel>
+        <birth_day>21</birth_day>
+        <birth_month>6</birth_month>
+        <birth_year>1945</birth_year>
+        <pesel>1945062111214</pesel>
         <salary>FROM0TO1500</salary>
     </person>
     <person id="5">
-        <name>Adam</name>
+        <name>Arkadiusz</name>
         <surname>Wojciechowski</surname>
-        <birth_day>3</birth_day>
-        <birth_month>6</birth_month>
-        <birth_year>1930</birth_year>
-        <pesel>1930060362914</pesel>
-        <salary>FROM6000TO10000</salary>
+        <birth_day>30</birth_day>
+        <birth_month>3</birth_month>
+        <birth_year>1973</birth_year>
+        <pesel>1973033082632</pesel>
+        <salary>OVER10000</salary>
     </person>
     <person id="6">
-        <name>Witold</name>
+        <name>Jeremi</name>
         <surname>Wojciechowski</surname>
-        <birth_day>25</birth_day>
-        <birth_month>11</birth_month>
-        <birth_year>1996</birth_year>
-        <pesel>1996112549431</pesel>
+        <birth_day>3</birth_day>
+        <birth_month>3</birth_month>
+        <birth_year>1925</birth_year>
+        <pesel>1925030326577</pesel>
         <salary>FROM0TO1500</salary>
     </person>
     <person id="7">
-        <name>Mateusz</name>
+        <name>Damian</name>
         <surname>Wojciechowski</surname>
-        <birth_day>14</birth_day>
-        <birth_month>5</birth_month>
-        <birth_year>1951</birth_year>
-        <pesel>1951051451252</pesel>
-        <salary>FROM3000TO6000</salary>
+        <birth_day>17</birth_day>
+        <birth_month>1</birth_month>
+        <birth_year>1978</birth_year>
+        <pesel>1978011721733</pesel>
+        <salary>FROM1500TO3000</salary>
     </person>
     <person id="8">
-        <name>Miłosz</name>
-        <surname>Wojciechowski</surname>
-        <birth_day>15</birth_day>
-        <birth_month>12</birth_month>
-        <birth_year>1943</birth_year>
-        <pesel>1943121527735</pesel>
-        <salary>OVER10000</salary>
+        <name>Karol</name>
+        <surname>Iksiński</surname>
+        <birth_day>2</birth_day>
+        <birth_month>8</birth_month>
+        <birth_year>1912</birth_year>
+        <pesel>1912080298692</pesel>
+        <salary>FROM1500TO3000</salary>
     </person>
     <person id="9">
-        <name>Dawid</name>
+        <name>Karol</name>
         <surname>Wojciechowski</surname>
-        <birth_day>9</birth_day>
-        <birth_month>6</birth_month>
-        <birth_year>1972</birth_year>
-        <pesel>1972060985373</pesel>
-        <salary>FROM6000TO10000</salary>
+        <birth_day>2</birth_day>
+        <birth_month>2</birth_month>
+        <birth_year>1919</birth_year>
+        <pesel>1919020207459</pesel>
+        <salary>FROM0TO1500</salary>
     </person>
     <person id="10">
-        <name>Jeremi</name>
-        <surname>Iksiński</surname>
-        <birth_day>4</birth_day>
-        <birth_month>8</birth_month>
-        <birth_year>1973</birth_year>
-        <pesel>1973080467899</pesel>
-        <salary>FROM3000TO6000</salary>
+        <name>Karol</name>
+        <surname>Wojciechowski</surname>
+        <birth_day>18</birth_day>
+        <birth_month>4</birth_month>
+        <birth_year>1931</birth_year>
+        <pesel>1931041845432</pesel>
+        <salary>OVER10000</salary>
     </person>
 </society>
