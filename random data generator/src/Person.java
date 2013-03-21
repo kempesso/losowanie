@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 @XmlType(propOrder={"name", "surname", "birth_day", "birth_month", 
-		"birth_year", "pesel", "salary"})
+		"birth_year", "pesel", "salary", "phone"})
 @XmlRootElement
 public class Person {
 	private int id;
@@ -70,6 +70,15 @@ public class Person {
 		for (phoneNumber p : phone)
 			System.out.println(p.getNumber() + " " + p.getType());
 	}
+	
+	public ArrayList<phoneNumber> getPhone() {
+		return phone;
+	}
+	@XmlElement
+	public void setPhone(ArrayList<phoneNumber> phone) {
+		this.phone = phone;
+	}
+	
 	public long getNumber(NumberType type) {
 		long num=0;
 		for (phoneNumber p : phone)

@@ -1,10 +1,183 @@
-1;Adam;Wojciechowski;26-11-1986;1986112645791;FROM0TO1500;379025128;946264181;548262026
-2;Micha�;Wojciechowski;2-10-1935;1935100220735;FROM3000TO6000;302876559;433023635;256171648
-3;Jakub;Wojciechowski;8-2-1906;1906020830177;FROM1500TO3000;796615463;512774447;880811299
-4;Arkadiusz;Iksi�ski;21-9-1982;1982092159716;FROM1500TO3000;361573522;146777187;489565147
-5;Witold;Iksi�ski;9-9-1957;1957090947351;FROM3000TO6000;943132547;846364256;268679069
-6;Przemys�aw;Wojciechowski;8-12-1927;1927120832157;FROM3000TO6000;683827441;946884771;968162786
-7;Witold;Wojciechowski;3-6-1932;1932060309111;FROM3000TO6000;965840060;732658529;886777505
-8;Robert;Wojciechowski;12-3-1974;1974031240299;FROM3000TO6000;685818813;337265514;826310343
-9;Krzysztof;Wojciechowski;28-3-1957;1957032821194;FROM3000TO6000;341087659;525758123;917041627
-10;Witold;Wojciechowski;23-6-1905;1905062309771;FROM0TO1500;830173157;743870352;217681554
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<society>
+    <person id="1">
+        <name>Antoni</name>
+        <surname>Wojciechowski</surname>
+        <birth_day>2</birth_day>
+        <birth_month>5</birth_month>
+        <birth_year>1953</birth_year>
+        <pesel>1953050284917</pesel>
+        <salary>FROM3000TO6000</salary>
+        <phone type="mobile">
+            <number>372856578</number>
+        </phone>
+        <phone type="landline">
+            <number>861074451</number>
+        </phone>
+        <phone type="work">
+            <number>950642718</number>
+        </phone>
+    </person>
+    <person id="2">
+        <name>Czesław</name>
+        <surname>Wojciechowski</surname>
+        <birth_day>1</birth_day>
+        <birth_month>12</birth_month>
+        <birth_year>1978</birth_year>
+        <pesel>1978120198852</pesel>
+        <salary>FROM3000TO6000</salary>
+        <phone type="mobile">
+            <number>898268560</number>
+        </phone>
+        <phone type="landline">
+            <number>871071322</number>
+        </phone>
+        <phone type="work">
+            <number>199098041</number>
+        </phone>
+    </person>
+    <person id="3">
+        <name>Czesław</name>
+        <surname>Iksiński</surname>
+        <birth_day>11</birth_day>
+        <birth_month>9</birth_month>
+        <birth_year>1921</birth_year>
+        <pesel>1921091161957</pesel>
+        <salary>FROM0TO1500</salary>
+        <phone type="mobile">
+            <number>721522695</number>
+        </phone>
+        <phone type="landline">
+            <number>753547528</number>
+        </phone>
+        <phone type="work">
+            <number>732951216</number>
+        </phone>
+    </person>
+    <person id="4">
+        <name>Jeremi</name>
+        <surname>Iksiński</surname>
+        <birth_day>26</birth_day>
+        <birth_month>3</birth_month>
+        <birth_year>1986</birth_year>
+        <pesel>1986032617233</pesel>
+        <salary>FROM6000TO10000</salary>
+        <phone type="mobile">
+            <number>896269813</number>
+        </phone>
+        <phone type="landline">
+            <number>971480422</number>
+        </phone>
+        <phone type="work">
+            <number>462310817</number>
+        </phone>
+    </person>
+    <person id="5">
+        <name>Krzysztof</name>
+        <surname>Wojciechowski</surname>
+        <birth_day>1</birth_day>
+        <birth_month>5</birth_month>
+        <birth_year>1947</birth_year>
+        <pesel>1947050164639</pesel>
+        <salary>FROM1500TO3000</salary>
+        <phone type="mobile">
+            <number>937266177</number>
+        </phone>
+        <phone type="landline">
+            <number>401683020</number>
+        </phone>
+        <phone type="work">
+            <number>696598299</number>
+        </phone>
+    </person>
+    <person id="6">
+        <name>Miłosz</name>
+        <surname>Wojciechowski</surname>
+        <birth_day>19</birth_day>
+        <birth_month>4</birth_month>
+        <birth_year>1926</birth_year>
+        <pesel>1926041964816</pesel>
+        <salary>FROM1500TO3000</salary>
+        <phone type="mobile">
+            <number>208162341</number>
+        </phone>
+        <phone type="landline">
+            <number>482381664</number>
+        </phone>
+        <phone type="work">
+            <number>267909291</number>
+        </phone>
+    </person>
+    <person id="7">
+        <name>Dawid</name>
+        <surname>Iksiński</surname>
+        <birth_day>17</birth_day>
+        <birth_month>11</birth_month>
+        <birth_year>1920</birth_year>
+        <pesel>1920111780696</pesel>
+        <salary>FROM6000TO10000</salary>
+        <phone type="mobile">
+            <number>332613170</number>
+        </phone>
+        <phone type="landline">
+            <number>687477332</number>
+        </phone>
+        <phone type="work">
+            <number>260154034</number>
+        </phone>
+    </person>
+    <person id="8">
+        <name>Adam</name>
+        <surname>Iksiński</surname>
+        <birth_day>26</birth_day>
+        <birth_month>4</birth_month>
+        <birth_year>1958</birth_year>
+        <pesel>1958042687256</pesel>
+        <salary>FROM6000TO10000</salary>
+        <phone type="mobile">
+            <number>612165516</number>
+        </phone>
+        <phone type="landline">
+            <number>519632009</number>
+        </phone>
+        <phone type="work">
+            <number>417190368</number>
+        </phone>
+    </person>
+    <person id="9">
+        <name>Jeremi</name>
+        <surname>Iksiński</surname>
+        <birth_day>1</birth_day>
+        <birth_month>7</birth_month>
+        <birth_year>1999</birth_year>
+        <pesel>1999070197598</pesel>
+        <salary>OVER10000</salary>
+        <phone type="mobile">
+            <number>394198466</number>
+        </phone>
+        <phone type="landline">
+            <number>549733376</number>
+        </phone>
+        <phone type="work">
+            <number>460418064</number>
+        </phone>
+    </person>
+    <person id="10">
+        <name>Miłosz</name>
+        <surname>Iksiński</surname>
+        <birth_day>30</birth_day>
+        <birth_month>1</birth_month>
+        <birth_year>1996</birth_year>
+        <pesel>1996013050716</pesel>
+        <salary>FROM3000TO6000</salary>
+        <phone type="mobile">
+            <number>244964514</number>
+        </phone>
+        <phone type="landline">
+            <number>473005292</number>
+        </phone>
+        <phone type="work">
+            <number>994551131</number>
+        </phone>
+    </person>
+</society>

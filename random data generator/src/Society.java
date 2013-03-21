@@ -53,7 +53,18 @@ public class Society {
 				break;
 			}
 	}
+	public void addPerson(Person person) {
+		this.person.add(person);
+	}
 	
+	public static Society recoverSocietyFromXmlFile(String fileName) {
+		XML_FileManagement XmlManager = new XML_FileManagement();
+		return XmlManager.recoverSocietyFromFile(fileName);
+	}
+	public static Society recoverSocietyfromCsvFile(String fileName) {
+		CSV_FileManagement CsvManager = new CSV_FileManagement();
+		return CsvManager.recoverSocietyFromFile(fileName);
+	}
 	public void saveToXml(String fileName) {
 		XML_FileManagement XmlManager = new XML_FileManagement();
 		XmlManager.saveSocietyToFile(this, fileName);

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<society>
+    <person id="1">
+        <name>Czesław</name>
+        <surname>Iksiński</surname>
+        <birth_day>25</birth_day>
+        <birth_month>12</birth_month>
+        <birth_year>1942</birth_year>
+        <pesel>1942122504198</pesel>
+        <salary>FROM0TO1500</salary>
+        <phone type="mobile">
+            <number>438917274</number>
+        </phone>
+        <phone type="landline">
+            <number>236338107</number>
+        </phone>
+        <phone type="work">
+            <number>267575807</number>
+        </phone>
+    </person>
+    <person id="2">
+        <name>Czesław</name>
+        <surname>Iksiński</surname>
+        <birth_day>16</birth_day>
+        <birth_month>9</birth_month>
+        <birth_year>1973</birth_year>
+        <pesel>1973091620156</pesel>
+        <salary>OVER10000</salary>
+        <phone type="mobile">
+            <number>568419982</number>
+        </phone>
+        <phone type="landline">
+            <number>822828984</number>
+        </phone>
+        <phone type="work">
+            <number>674676927</number>
+        </phone>
+    </person>
+    <person id="3">
+        <name>Witold</name>
+        <surname>Iksiński</surname>
+        <birth_day>4</birth_day>
+        <birth_month>10</birth_month>
+        <birth_year>1973</birth_year>
+        <pesel>1973100417437</pesel>
+        <salary>FROM6000TO10000</salary>
+        <phone type="mobile">
+            <number>105561708</number>
+        </phone>
+        <phone type="landline">
+            <number>648985399</number>
+        </phone>
+        <phone type="work">
+            <number>809542136</number>
+        </phone>
+    </person>
+    <person id="4">
+        <name>Michał</name>
+        <surname>Iksiński</surname>
+        <birth_day>6</birth_day>
+        <birth_month>3</birth_month>
+        <birth_year>1910</birth_year>
+        <pesel>1910030658253</pesel>
+        <salary>FROM1500TO3000</salary>
+        <phone type="mobile">
+            <number>920752633</number>
+        </phone>
+        <phone type="landline">
+            <number>196738451</number>
+        </phone>
+        <phone type="work">
+            <number>966970378</number>
+        </phone>
+    </person>
+    <person id="5">
+        <name>Mateusz</name>
+        <surname>Iksiński</surname>
+        <birth_day>29</birth_day>
+        <birth_month>11</birth_month>
+        <birth_year>1903</birth_year>
+        <pesel>1903112988514</pesel>
+        <salary>FROM6000TO10000</salary>
+        <phone type="mobile">
+            <number>430569760</number>
+        </phone>
+        <phone type="landline">
+            <number>396802224</number>
+        </phone>
+        <phone type="work">
+            <number>795572875</number>
+        </phone>
+    </person>
+    <person id="6">
+        <name>Robert</name>
+        <surname>Wojciechowski</surname>
+        <birth_day>15</birth_day>
+        <birth_month>5</birth_month>
+        <birth_year>1964</birth_year>
+        <pesel>19640515835310</pesel>
+        <salary>FROM3000TO6000</salary>
+        <phone type="mobile">
+            <number>876538768</number>
+        </phone>
+        <phone type="landline">
+            <number>307815786</number>
+        </phone>
+        <phone type="work">
+            <number>263343094</number>
+        </phone>
+    </person>
+    <person id="7">
+        <name>Karol</name>
+        <surname>Iksiński</surname>
+        <birth_day>27</birth_day>
+        <birth_month>2</birth_month>
+        <birth_year>1993</birth_year>
+        <pesel>1993022742339</pesel>
+        <salary>FROM0TO1500</salary>
+        <phone type="mobile">
+            <number>690784417</number>
+        </phone>
+        <phone type="landline">
+            <number>136537311</number>
+        </phone>
+        <phone type="work">
+            <number>875250936</number>
+        </phone>
+    </person>
+    <person id="8">
+        <name>Czesław</name>
+        <surname>Wojciechowski</surname>
+        <birth_day>19</birth_day>
+        <birth_month>9</birth_month>
+        <birth_year>1996</birth_year>
+        <pesel>1996091938333</pesel>
+        <salary>FROM1500TO3000</salary>
+        <phone type="mobile">
+            <number>491330981</number>
+        </phone>
+        <phone type="landline">
+            <number>217530813</number>
+        </phone>
+        <phone type="work">
+            <number>472983778</number>
+        </phone>
+    </person>
+    <person id="9">
+        <name>Jakub</name>
+        <surname>Wojciechowski</surname>
+        <birth_day>8</birth_day>
+        <birth_month>4</birth_month>
+        <birth_year>1912</birth_year>
+        <pesel>19120408145510</pesel>
+        <salary>FROM3000TO6000</salary>
+        <phone type="mobile">
+            <number>579073468</number>
+        </phone>
+        <phone type="landline">
+            <number>977733986</number>
+        </phone>
+        <phone type="work">
+            <number>448642142</number>
+        </phone>
+    </person>
+    <person id="10">
+        <name>Przemysław</name>
+        <surname>Iksiński</surname>
+        <birth_day>21</birth_day>
+        <birth_month>6</birth_month>
+        <birth_year>1977</birth_year>
+        <pesel>1977062169136</pesel>
+        <salary>FROM0TO1500</salary>
+        <phone type="mobile">
+            <number>974901421</number>
+        </phone>
+        <phone type="landline">
+            <number>132960574</number>
+        </phone>
+        <phone type="work">
+            <number>206799704</number>
+        </phone>
+    </person>
+</society>

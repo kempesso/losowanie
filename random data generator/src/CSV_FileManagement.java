@@ -10,6 +10,7 @@ public class CSV_FileManagement implements FilesManagement{
 		try {
 			PrintWriter zapis = new PrintWriter(fileName);
 			zapis.print(personToString(person));
+			zapis.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -44,6 +45,19 @@ public class CSV_FileManagement implements FilesManagement{
 		for (NumberType type : NumberType.values())
 			result+= ";" + person.getNumber(type);
 		return result;
+	}
+
+	@Override
+	public Society recoverSocietyFromFile(String fileName) {
+		// TODO Auto-generated method stub
+		Society society = new Society();
+		return null;
+	}
+
+	@Override
+	public Person recoverPersonFromFile(String fileName) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

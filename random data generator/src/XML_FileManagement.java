@@ -1,8 +1,11 @@
 
 import java.io.File;
+import java.io.FileNotFoundException;
+
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 
 
 public class XML_FileManagement implements FilesManagement{
@@ -20,7 +23,6 @@ public class XML_FileManagement implements FilesManagement{
 			jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 	 
 			jaxbMarshaller.marshal(person, file);
-			jaxbMarshaller.marshal(person, System.out);
 	 
 		      } catch (JAXBException e) {
 			e.printStackTrace();
@@ -40,11 +42,40 @@ public class XML_FileManagement implements FilesManagement{
 			jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 	 
 			jaxbMarshaller.marshal(society, file);
-			jaxbMarshaller.marshal(society, System.out);
 	 
 		      } catch (JAXBException e) {
 			e.printStackTrace();
 		      }
+	}
+
+	@Override
+	public Society recoverSocietyFromFile(String fileName) {
+		// TODO Auto-generated method stub
+		Society society=null;
+		File file = new File(fileName);
+		if (!file.exists())
+			return null;
+		else {
+			try {
+				
+				JAXBContext jaxbContext = JAXBContext.newInstance(Society.class);
+				Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+		 
+				// output pretty printed
+				society =  (Society) jaxbUnmarshaller.unmarshal(file);
+	
+			      } catch (JAXBException e) {
+			    	  e.printStackTrace();
+			      } 
+			return society;
+		}
+	}
+
+	@Override
+	public Person recoverPersonFromFile( String fileName) {
+		// TODO Auto-generated method stub
+		return null;
+		
 	}
 	
 }

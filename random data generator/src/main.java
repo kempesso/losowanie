@@ -28,22 +28,32 @@ public class main {
 		*/
 		
 		int amount = Integer.parseInt(args[0]);
-		String outputFile = args[2];
-		System.out.println("Saving output to: " + outputFile);
+		String fileName = args[2];
 		
+		Society recovered=null;
 		Society employee = new Society();
 		employee.generateSociety(amount);
 		//employee.printAll();
 		
 		//employee.removePerson(3);
 		//employee.printAmount(5);
-		if (Integer.parseInt(args[1]) == 0)
-			employee.saveToXml(outputFile);
-		else
-			employee.saveToCsv(outputFile);
-		//Person golota = new Person("andrzej", "golota", 1,1,1993);
+		if (Integer.parseInt(args[1]) == 0) {
+			System.out.println("Saving output to: " + fileName);
+			employee.saveToXml(fileName);
+		}
+		else if (Integer.parseInt(args[1]) == 1) {
+			System.out.println("Saving output to: " + fileName);
+			employee.saveToCsv(fileName);
+		}
+		else if (Integer.parseInt(args[1]) == 2) {
+			System.out.println("Recovering society from: " + fileName);
+			recovered = Society.recoverSocietyFromXmlFile(fileName);
+		}
+		else {
+			System.out.println("Recovering society from: " + fileName);
+		}
 		
-		
+		if (recovered!=null) recovered.printAll();
 		
 		
 	}
